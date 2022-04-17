@@ -1,0 +1,14 @@
+syntax = "proto3";
+package greeter;
+
+import "google/protobuf/empty.proto";
+option go_package = "./greeter";
+
+service Greeter {
+    rpc SayHello (HelloRequest) returns (google.protobuf.Empty) {}
+}
+  
+  
+message HelloRequest {
+    string name = 1;
+}  
