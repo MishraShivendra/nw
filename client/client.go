@@ -33,7 +33,7 @@ func main() {
 	defer conn.Close()
 	c := protoGo.NewGreeterClient(conn)
 
-	yamlFile, err := ioutil.ReadFile("../yaml/users.yaml")
+	yamlFile, err := ioutil.ReadFile("users.yaml")
 	if err != nil {
 		log.Printf("yamlFile.Get err   #%v ", err)
 	}
