@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --target build --file Dockerfile --tag build:latest; docker build . --target runer --file Dockerfile --tag helloapp:latest;docker run -it helloapp:latest
+      run: docker build . --target build --file Dockerfile --tag build:latest; docker build . --target runer --file Dockerfile --tag helloapp:latest;docker run helloapp:latest
